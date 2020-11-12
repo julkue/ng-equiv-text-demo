@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" target-language="de" datatype="plaintext" original="ng2.template">
-
+    <body>
+      <trans-unit id="sharedGreeting" datatype="html">
+        <source>Dies ist ein Gruss für <x id="INTERPOLATION" equiv-text="{{ name }}"/>. Er arbeitet von <x id="INTERPOLATION_1" equiv-text="{{ officeLocation }}"/>!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">dist/shared/projects/shared/src/lib/components/hello-world/hello-world.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Hello World Component</note>
+        <note priority="1" from="meaning">Greeting</note>
+      </trans-unit>
+    </body>
   </file>
 </xliff>

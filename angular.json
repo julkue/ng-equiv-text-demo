@@ -36,8 +36,7 @@
         "sourceLocale": "en",
         "locales": {
           "de": "projects/example-app/src/locale/messages.de.xlf",
-          "fr": "projects/example-app/src/locale/messages.fr.xlf",
-          "it": "projects/example-app/src/locale/messages.it.xlf"
+          "fr": "projects/example-app/src/locale/messages.fr.xlf"
         }
       },
       "architect": {

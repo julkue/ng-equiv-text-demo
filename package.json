@@ -10,7 +10,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "xi18n": "npm run build shared && ng xi18n example-app --format=xlf --outFile=src/locale/messages.xlf"
+    "xi18n": "npm run build shared && ng extract-i18n example-app --format=xlf --outFile=projects/example-app/src/locale/messages.xlf"
   },
   "private": true,
   "dependencies": {
