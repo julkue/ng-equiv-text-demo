@@ -1,9 +1,8 @@
 /*
  * Public API Surface of shared
  */
-
-export * from './lib/shared.service';
-export * from './lib/shared.component';
+// Module
 export * from './lib/shared.module';
 
+// Components
 export * from './lib/components/hello-world/hello-world.component';
