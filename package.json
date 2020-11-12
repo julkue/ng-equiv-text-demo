@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start:shared": "ng build shared --configuration=dev --watch",
+    "start:example-app": "ng serve example-app --configuration=dev",
+    "start": "node --eval \"console.error('ERROR: Use start:shared and start:example-app')\" && exit 1",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

@@ -88,6 +88,10 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "dev": {
+              "localize": ["de"],
+              "baseHref": "/de/"
             }
           }
         },
@@ -99,6 +103,9 @@
           "configurations": {
             "production": {
               "browserTarget": "example-app:build:production"
+            },
+            "dev": {
+              "browserTarget": "example-app:build:dev"
             }
           }
         },
@@ -167,7 +174,8 @@
           "configurations": {
             "production": {
               "tsConfig": "projects/shared/tsconfig.lib.prod.json"
-            }
+            },
+            "dev": {}
           }
         },
         "test": {
