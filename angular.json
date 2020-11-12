@@ -7,12 +7,39 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "skipTests": true
+        },
+        "@schematics/angular:class": {
+          "skipTests": true
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true
+        },
+        "@schematics/angular:guard": {
+          "skipTests": true
+        },
+        "@schematics/angular:module": {
+          "skipTests": true
+        },
+        "@schematics/angular:pipe": {
+          "skipTests": true
+        },
+        "@schematics/angular:service": {
+          "skipTests": true
         }
       },
       "root": "projects/example-app",
       "sourceRoot": "projects/example-app/src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "de": "projects/example-app/src/locale/messages.de.xlf",
+          "fr": "projects/example-app/src/locale/messages.fr.xlf",
+          "it": "projects/example-app/src/locale/messages.it.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -40,6 +67,7 @@
                   "with": "projects/example-app/src/environments/environment.prod.ts"
                 }
               ],
+              "localize": true,
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
