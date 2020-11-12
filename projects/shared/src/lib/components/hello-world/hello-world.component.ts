@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hello-world.component.scss']
 })
 export class HelloWorldComponent implements OnInit {
-  constructor() { }
+  public name = 'Pete';
+  public officeLocation = 'home';
+
+  constructor() {
+  }
 
   public ngOnInit(): void {
   }
